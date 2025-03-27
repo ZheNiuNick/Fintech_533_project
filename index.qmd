@@ -3,6 +3,6 @@ title: "Fintech_533_Project_Zhe"
 ---
 
 This is a Quarto website.
-This is Zhe' niu s site.
+This is Zhe Niu and Haochen's site.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
