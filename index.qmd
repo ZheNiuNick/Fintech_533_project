@@ -1,8 +1,75 @@
 ---
-title: "Fintech_533_Project_Zhe"
+title: "Candlestick-Based Trend Prediction Strategy"
+format: html
 ---
 
-This is a Quarto website.
-This is Zhe Niu and Haochen's site.
+# 📈 Trading Strategy & Plan
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This project proposes a **visual-based trend prediction trading strategy** using Japanese candlestick patterns and a convolutional neural network (CNN). The approach is inspired by the methodology of Mersal et al. (2024), with key adaptations to suit our dataset and simplified implementation.
+
+## 🔍 Overview of the Strategy
+
+We use a **sliding window approach** to generate candlestick chart segments (5 candles per window). For each window:
+
+- Identify patterns using `ta-lib`
+- Use CNN to classify pattern as **bullish** or **bearish**
+- Based on the predicted trend, enter a trade on the **next candle**
+
+## 🚦 Trade Walkthrough: A Single Trade
+
+**Let’s walk through one example trade** using our strategy:
+
+### Step 1: Entry Signal
+- A 5-candle sliding window is fed into the trained CNN model.
+- CNN outputs: `Uptrend (probability: 0.91)`
+- Entry Condition:
+  - Predicted trend = "Uptrend"
+  - The last candle in the window closes above the 20-period Simple Moving Average (SMA20)
+
+✅ **Enter a Long Position (Buy) at the opening of the next candle**
+
+### Step 2: Exit Signal
+- Exit after **3 candles** (fixed holding period), OR:
+- If **CNN prediction flips to Downtrend** in an overlapping future window
+
+### Step 3: Stop Loss / Risk Rule
+- Place a **stop loss at 1.5 × ATR(14)** below the entry price
+- No more than 2% of portfolio risked per trade
+
+### ⛓️ Additional Rules
+- Only one active trade at a time
+- No trades during low-volume periods (overnight hours or holidays)
+
+---
+
+# 📅 Backtest Setup
+
+- Data: EUR/USD 15-min OHLC from 2020–2024
+- Technical Indicators: SMA, ATR
+- Pattern Recognition: `ta-lib` 61-patterns
+- Model: 3-layer CNN with image input of size 150×150
+
+---
+
+# 🗃️ Data Sample (See `data.qmd`)
+
+A preview of our preprocessed dataset is shown in the [Data Page](data.qmd).
+
+---
+
+# 🧑‍🏫 Discussion Plan
+
+We will discuss with the **instructor and TAs via Teams**:
+- Ensure technical indicators and CNN logic meet course requirements
+- Confirm data source and model complexity are acceptable
+- Clarify expected outcome (e.g., just classification or full trading system)
+
+---
+
+# 🚀 Next Steps
+
+- Finalize CNN model training
+- Implement trade simulator for backtest
+- Evaluate strategy on 2023–2024 unseen data
+- Measure precision, recall, Sharpe ratio
+

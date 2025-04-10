@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fintech_533_Project_Zhe</title>
+<title>Candlestick-Based Trend Prediction Strategy – Fintech_533_Project_Zhe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,15 +107,35 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#trading-strategy-plan" id="toc-trading-strategy-plan" class="nav-link active" data-scroll-target="#trading-strategy-plan">📈 Trading Strategy &amp; Plan</a>
+  <ul class="collapse">
+  <li><a href="#overview-of-the-strategy" id="toc-overview-of-the-strategy" class="nav-link" data-scroll-target="#overview-of-the-strategy">🔍 Overview of the Strategy</a></li>
+  <li><a href="#trade-walkthrough-a-single-trade" id="toc-trade-walkthrough-a-single-trade" class="nav-link" data-scroll-target="#trade-walkthrough-a-single-trade">🚦 Trade Walkthrough: A Single Trade</a>
+  <ul class="collapse">
+  <li><a href="#step-1-entry-signal" id="toc-step-1-entry-signal" class="nav-link" data-scroll-target="#step-1-entry-signal">Step 1: Entry Signal</a></li>
+  <li><a href="#step-2-exit-signal" id="toc-step-2-exit-signal" class="nav-link" data-scroll-target="#step-2-exit-signal">Step 2: Exit Signal</a></li>
+  <li><a href="#step-3-stop-loss-risk-rule" id="toc-step-3-stop-loss-risk-rule" class="nav-link" data-scroll-target="#step-3-stop-loss-risk-rule">Step 3: Stop Loss / Risk Rule</a></li>
+  <li><a href="#additional-rules" id="toc-additional-rules" class="nav-link" data-scroll-target="#additional-rules">⛓️ Additional Rules</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#backtest-setup" id="toc-backtest-setup" class="nav-link" data-scroll-target="#backtest-setup">📅 Backtest Setup</a></li>
+  <li><a href="#data-sample-see-data.qmd" id="toc-data-sample-see-data.qmd" class="nav-link" data-scroll-target="#data-sample-see-data.qmd">🗃️ Data Sample (See <code>data.qmd</code>)</a></li>
+  <li><a href="#discussion-plan" id="toc-discussion-plan" class="nav-link" data-scroll-target="#discussion-plan">🧑‍🏫 Discussion Plan</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">🚀 Next Steps</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Fintech_533_Project_Zhe</h1>
+<h1 class="title">Candlestick-Based Trend Prediction Strategy</h1>
 </div>
 
 
@@ -132,10 +152,89 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website. This is Zhe Niu and Haochen’s site.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="trading-strategy-plan" class="level1">
+<h1>📈 Trading Strategy &amp; Plan</h1>
+<p>This project proposes a <strong>visual-based trend prediction trading strategy</strong> using Japanese candlestick patterns and a convolutional neural network (CNN). The approach is inspired by the methodology of Mersal et al.&nbsp;(2024), with key adaptations to suit our dataset and simplified implementation.</p>
+<section id="overview-of-the-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-the-strategy">🔍 Overview of the Strategy</h2>
+<p>We use a <strong>sliding window approach</strong> to generate candlestick chart segments (5 candles per window). For each window:</p>
+<ul>
+<li>Identify patterns using <code>ta-lib</code></li>
+<li>Use CNN to classify pattern as <strong>bullish</strong> or <strong>bearish</strong></li>
+<li>Based on the predicted trend, enter a trade on the <strong>next candle</strong></li>
+</ul>
+</section>
+<section id="trade-walkthrough-a-single-trade" class="level2">
+<h2 class="anchored" data-anchor-id="trade-walkthrough-a-single-trade">🚦 Trade Walkthrough: A Single Trade</h2>
+<p><strong>Let’s walk through one example trade</strong> using our strategy:</p>
+<section id="step-1-entry-signal" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-entry-signal">Step 1: Entry Signal</h3>
+<ul>
+<li>A 5-candle sliding window is fed into the trained CNN model.</li>
+<li>CNN outputs: <code>Uptrend (probability: 0.91)</code></li>
+<li>Entry Condition:
+<ul>
+<li>Predicted trend = “Uptrend”</li>
+<li>The last candle in the window closes above the 20-period Simple Moving Average (SMA20)</li>
+</ul></li>
+</ul>
+<p>✅ <strong>Enter a Long Position (Buy) at the opening of the next candle</strong></p>
+</section>
+<section id="step-2-exit-signal" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-exit-signal">Step 2: Exit Signal</h3>
+<ul>
+<li>Exit after <strong>3 candles</strong> (fixed holding period), OR:</li>
+<li>If <strong>CNN prediction flips to Downtrend</strong> in an overlapping future window</li>
+</ul>
+</section>
+<section id="step-3-stop-loss-risk-rule" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-stop-loss-risk-rule">Step 3: Stop Loss / Risk Rule</h3>
+<ul>
+<li>Place a <strong>stop loss at 1.5 × ATR(14)</strong> below the entry price</li>
+<li>No more than 2% of portfolio risked per trade</li>
+</ul>
+</section>
+<section id="additional-rules" class="level3">
+<h3 class="anchored" data-anchor-id="additional-rules">⛓️ Additional Rules</h3>
+<ul>
+<li>Only one active trade at a time</li>
+<li>No trades during low-volume periods (overnight hours or holidays)</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="backtest-setup" class="level1">
+<h1>📅 Backtest Setup</h1>
+<ul>
+<li>Data: EUR/USD 15-min OHLC from 2020–2024</li>
+<li>Technical Indicators: SMA, ATR</li>
+<li>Pattern Recognition: <code>ta-lib</code> 61-patterns</li>
+<li>Model: 3-layer CNN with image input of size 150×150</li>
+</ul>
+<hr>
+</section>
+<section id="data-sample-see-data.qmd" class="level1">
+<h1>🗃️ Data Sample (See <code>data.qmd</code>)</h1>
+<p>A preview of our preprocessed dataset is shown in the <a href="./data.html">Data Page</a>.</p>
+<hr>
+</section>
+<section id="discussion-plan" class="level1">
+<h1>🧑‍🏫 Discussion Plan</h1>
+<p>We will discuss with the <strong>instructor and TAs via Teams</strong>: - Ensure technical indicators and CNN logic meet course requirements - Confirm data source and model complexity are acceptable - Clarify expected outcome (e.g., just classification or full trading system)</p>
+<hr>
+</section>
+<section id="next-steps" class="level1">
+<h1>🚀 Next Steps</h1>
+<ul>
+<li>Finalize CNN model training</li>
+<li>Implement trade simulator for backtest</li>
+<li>Evaluate strategy on 2023–2024 unseen data</li>
+<li>Measure precision, recall, Sharpe ratio</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
