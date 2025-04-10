@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data Preview",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "📄 Sample Candlestick Dataset\nHere is a preview of the candlestick-based dataset used for training the model.\n\nimport pandas as pd\nfrom IPython.display import display, HTML\n\n# Sample candlestick data\ndata = pd.DataFrame({\n    \"Open\": [1.0854, 1.0861, 1.0870, 1.0878, 1.0884],\n    \"High\": [1.0862, 1.0875, 1.0889, 1.0894, 1.0897],\n    \"Low\": [1.0845, 1.0852, 1.0859, 1.0865, 1.0871],\n    \"Close\": [1.0860, 1.0872, 1.0885, 1.0891, 1.0893],\n    \"Pattern\": [\"Hammer\", \"Doji\", \"Bullish Engulfing\", \"Morning Star\", \"Shooting Star\"]\n})\n\n# Render as styled HTML table (without index)\nhtml_table = data.to_html(index=False, border=1, justify=\"center\", classes=\"table table-striped\")\ndisplay(HTML(html_table))\n\n\n\n\nOpen\nHigh\nLow\nClose\nPattern\n\n\n\n\n1.0854\n1.0862\n1.0845\n1.0860\nHammer\n\n\n1.0861\n1.0875\n1.0852\n1.0872\nDoji\n\n\n1.0870\n1.0889\n1.0859\n1.0885\nBullish Engulfing\n\n\n1.0878\n1.0894\n1.0865\n1.0891\nMorning Star\n\n\n1.0884\n1.0897\n1.0871\n1.0893\nShooting Star"
+    "text": "About this site"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Candlestick-Based Trend Prediction Strategy",
     "section": "",
-    "text": "This project proposes a visual-based trend prediction trading strategy using Japanese candlestick patterns and a convolutional neural network (CNN). The approach is inspired by the methodology of Mersal et al. (2024), with key adaptations to suit our dataset and simplified implementation.\n\n\nWe use a sliding window approach to generate candlestick chart segments (5 candles per window). For each window:\n\nIdentify patterns using ta-lib\nUse CNN to classify pattern as bullish or bearish\nBased on the predicted trend, enter a trade on the next candle\n\n\n\n\nLet’s walk through one example trade using our strategy:\n\n\n\nA 5-candle sliding window is fed into the trained CNN model.\nCNN outputs: Uptrend (probability: 0.91)\nEntry Condition:\n\nPredicted trend = “Uptrend”\nThe last candle in the window closes above the 20-period Simple Moving Average (SMA20)\n\n\n✅ Enter a Long Position (Buy) at the opening of the next candle\n\n\n\n\nExit after 3 candles (fixed holding period), OR:\nIf CNN prediction flips to Downtrend in an overlapping future window\n\n\n\n\n\nPlace a stop loss at 1.5 × ATR(14) below the entry price\nNo more than 2% of portfolio risked per trade\n\n\n\n\n\nOnly one active trade at a time\nNo trades during low-volume periods (overnight hours or holidays)"
+    "text": "This project proposes a visual-based trend prediction trading strategy using Japanese candlestick patterns and a convolutional neural network (CNN). The approach is inspired by the methodology of Mersal et al. (2024), with key adaptations to suit our dataset and simplified implementation.\n\n\nWe use a sliding window approach to generate candlestick chart segments (5 candles per window). For each window:\n\nIdentify patterns using ta-lib\nUse CNN to classify pattern as bullish or bearish\nBased on the predicted trend, enter a trade on the next candle\n\n\n\n\n\n\n\nA 5-candle sliding window is fed into the trained CNN model.\nCNN outputs: Uptrend (probability: 0.91)\nEntry Condition:\n\nPredicted trend = “Uptrend”\nThe last candle in the window closes above the 20-period Simple Moving Average (SMA20)\n\n\n✅ Enter a Long Position (Buy) at the opening of the next candle\n\n\n\n\nExit after 3 candles (fixed holding period), OR:\nIf CNN prediction flips to Downtrend in an overlapping future window\n\n\n\n\n\nPlace a stop loss at 1.5 × ATR(14) below the entry price\nNo more than 2% of portfolio risked per trade\n\n\n\n\n\nOnly one active trade at a time\nNo trades during low-volume periods (overnight hours or holidays)"
   },
   {
     "objectID": "index.html#overview-of-the-strategy",
@@ -25,13 +25,6 @@
     "href": "index.html#trade-walkthrough-a-single-trade",
     "title": "Candlestick-Based Trend Prediction Strategy",
     "section": "",
-    "text": "Let’s walk through one example trade using our strategy:\n\n\n\nA 5-candle sliding window is fed into the trained CNN model.\nCNN outputs: Uptrend (probability: 0.91)\nEntry Condition:\n\nPredicted trend = “Uptrend”\nThe last candle in the window closes above the 20-period Simple Moving Average (SMA20)\n\n\n✅ Enter a Long Position (Buy) at the opening of the next candle\n\n\n\n\nExit after 3 candles (fixed holding period), OR:\nIf CNN prediction flips to Downtrend in an overlapping future window\n\n\n\n\n\nPlace a stop loss at 1.5 × ATR(14) below the entry price\nNo more than 2% of portfolio risked per trade\n\n\n\n\n\nOnly one active trade at a time\nNo trades during low-volume periods (overnight hours or holidays)"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "text": "A 5-candle sliding window is fed into the trained CNN model.\nCNN outputs: Uptrend (probability: 0.91)\nEntry Condition:\n\nPredicted trend = “Uptrend”\nThe last candle in the window closes above the 20-period Simple Moving Average (SMA20)\n\n\n✅ Enter a Long Position (Buy) at the opening of the next candle\n\n\n\n\nExit after 3 candles (fixed holding period), OR:\nIf CNN prediction flips to Downtrend in an overlapping future window\n\n\n\n\n\nPlace a stop loss at 1.5 × ATR(14) below the entry price\nNo more than 2% of portfolio risked per trade\n\n\n\n\n\nOnly one active trade at a time\nNo trades during low-volume periods (overnight hours or holidays)"
   }
 ]

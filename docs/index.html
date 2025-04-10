@@ -20,10 +20,44 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,6 +100,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -124,9 +161,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   </ul></li>
   <li><a href="#backtest-setup" id="toc-backtest-setup" class="nav-link" data-scroll-target="#backtest-setup">📅 Backtest Setup</a></li>
-  <li><a href="#data-sample-see-data.qmd" id="toc-data-sample-see-data.qmd" class="nav-link" data-scroll-target="#data-sample-see-data.qmd">🗃️ Data Sample (See <code>data.qmd</code>)</a></li>
-  <li><a href="#discussion-plan" id="toc-discussion-plan" class="nav-link" data-scroll-target="#discussion-plan">🧑‍🏫 Discussion Plan</a></li>
-  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">🚀 Next Steps</a></li>
+  <li><a href="#data-sample" id="toc-data-sample" class="nav-link" data-scroll-target="#data-sample">📊 Data Sample</a></li>
   </ul>
 </nav>
     </div>
@@ -166,7 +201,6 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="trade-walkthrough-a-single-trade" class="level2">
 <h2 class="anchored" data-anchor-id="trade-walkthrough-a-single-trade">🚦 Trade Walkthrough: A Single Trade</h2>
-<p><strong>Let’s walk through one example trade</strong> using our strategy:</p>
 <section id="step-1-entry-signal" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-entry-signal">Step 1: Entry Signal</h3>
 <ul>
@@ -214,24 +248,76 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="data-sample-see-data.qmd" class="level1">
-<h1>🗃️ Data Sample (See <code>data.qmd</code>)</h1>
-<p>A preview of our preprocessed dataset is shown in the <a href="./data.html">Data Page</a>.</p>
-<hr>
-</section>
-<section id="discussion-plan" class="level1">
-<h1>🧑‍🏫 Discussion Plan</h1>
-<p>We will discuss with the <strong>instructor and TAs via Teams</strong>: - Ensure technical indicators and CNN logic meet course requirements - Confirm data source and model complexity are acceptable - Clarify expected outcome (e.g., just classification or full trading system)</p>
-<hr>
-</section>
-<section id="next-steps" class="level1">
-<h1>🚀 Next Steps</h1>
-<ul>
-<li>Finalize CNN model training</li>
-<li>Implement trade simulator for backtest</li>
-<li>Evaluate strategy on 2023–2024 unseen data</li>
-<li>Measure precision, recall, Sharpe ratio</li>
-</ul>
+<section id="data-sample" class="level1">
+<h1>📊 Data Sample</h1>
+<p>Here is a preview of the candlestick-based dataset used for training the model.</p>
+<div id="bf4effd5" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, HTML</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample candlestick data</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Open"</span>: [<span class="fl">1.0854</span>, <span class="fl">1.0861</span>, <span class="fl">1.0870</span>, <span class="fl">1.0878</span>, <span class="fl">1.0884</span>],</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"High"</span>: [<span class="fl">1.0862</span>, <span class="fl">1.0875</span>, <span class="fl">1.0889</span>, <span class="fl">1.0894</span>, <span class="fl">1.0897</span>],</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Low"</span>: [<span class="fl">1.0845</span>, <span class="fl">1.0852</span>, <span class="fl">1.0859</span>, <span class="fl">1.0865</span>, <span class="fl">1.0871</span>],</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Close"</span>: [<span class="fl">1.0860</span>, <span class="fl">1.0872</span>, <span class="fl">1.0885</span>, <span class="fl">1.0891</span>, <span class="fl">1.0893</span>],</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Pattern"</span>: [<span class="st">"Hammer"</span>, <span class="st">"Doji"</span>, <span class="st">"Bullish Engulfing"</span>, <span class="st">"Morning Star"</span>, <span class="st">"Shooting Star"</span>]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Pretty HTML table</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>html_table <span class="op">=</span> data.to_html(index<span class="op">=</span><span class="va">False</span>, border<span class="op">=</span><span class="dv">1</span>, justify<span class="op">=</span><span class="st">"center"</span>, classes<span class="op">=</span><span class="st">"table table-striped"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>display(HTML(html_table))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<table class="dataframe table table-striped caption-top table-sm small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Open</th>
+<th data-quarto-table-cell-role="th">High</th>
+<th data-quarto-table-cell-role="th">Low</th>
+<th data-quarto-table-cell-role="th">Close</th>
+<th data-quarto-table-cell-role="th">Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.0854</td>
+<td>1.0862</td>
+<td>1.0845</td>
+<td>1.0860</td>
+<td>Hammer</td>
+</tr>
+<tr class="even">
+<td>1.0861</td>
+<td>1.0875</td>
+<td>1.0852</td>
+<td>1.0872</td>
+<td>Doji</td>
+</tr>
+<tr class="odd">
+<td>1.0870</td>
+<td>1.0889</td>
+<td>1.0859</td>
+<td>1.0885</td>
+<td>Bullish Engulfing</td>
+</tr>
+<tr class="even">
+<td>1.0878</td>
+<td>1.0894</td>
+<td>1.0865</td>
+<td>1.0891</td>
+<td>Morning Star</td>
+</tr>
+<tr class="odd">
+<td>1.0884</td>
+<td>1.0897</td>
+<td>1.0871</td>
+<td>1.0893</td>
+<td>Shooting Star</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
 </section>
