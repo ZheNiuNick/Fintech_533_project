@@ -1,0 +1,34 @@
+---
+title: "Pandas Test"
+format: html
+jupyter: myvenv-kernel
+---
+
+This is a simple test to verify if pandas can read the CSV files from the source directory.
+
+```{python}
+import pandas as pd
+
+# Test if pandas is working
+print("Pandas version:", pd.__version__)
+
+# Try to read the blotter.csv file
+try:
+    blotter = pd.read_csv('source/blotter.csv')
+    print("\nSuccessfully read blotter.csv!")
+    print(f"Shape: {blotter.shape}")
+    print("\nFirst 5 rows:")
+    print(blotter.head())
+except Exception as e:
+    print(f"Error reading blotter.csv: {e}")
+
+# Try to read the ledger.csv file
+try:
+    ledger = pd.read_csv('source/ledger.csv')
+    print("\nSuccessfully read ledger.csv!")
+    print(f"Shape: {ledger.shape}")
+    print("\nFirst 5 rows:")
+    print(ledger.head())
+except Exception as e:
+    print(f"Error reading ledger.csv: {e}")
+``` 

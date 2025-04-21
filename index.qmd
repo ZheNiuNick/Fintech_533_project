@@ -1,64 +1,222 @@
 ---
-title: "Candlestick-Based Trend Prediction Strategy"
-format: html
+title: "MACD+ATR Balanced Strategy for Cryptocurrency Trading"
+format:
+  html:
+    toc: true
+    code-fold: false
+    code-tools: false
+    theme: cosmo
+    embed-resources: true
+    smooth-scroll: true
+    df-print: paged
 jupyter: python3
+kernel: venv
+execute:
+  echo: false
 ---
 
 # 📈 Trading Strategy & Plan
 
-This project proposes a **visual-based trend prediction trading strategy** using Japanese candlestick patterns and a convolutional neural network (CNN). The approach is inspired by the methodology of Mersal et al. (2024), with key adaptations to suit our dataset and simplified implementation.
+This project presents a **MACD indicator and ATR dynamic stop-loss balanced trading strategy** that captures trend reversal signals in the cryptocurrency market, combined with CNN deep learning for chart pattern recognition to achieve profitable swing trading. The strategy integrates technical indicators with machine learning, specifically optimized for the high volatility characteristics of the BTC/USDT market.
 
-## 🔍 Overview of the Strategy
+## 🔍 Core Strategy Concepts
 
-We use a **sliding window approach** to generate candlestick chart segments (5 candles per window). For each window:
+Our strategy is based on the following key elements:
 
-- Identify patterns using `ta-lib`
-- Use CNN to classify pattern as **bullish** or **bearish**
-- Based on the predicted trend, enter a trade on the **next candle**
+- **MACD Trend Signals**: Using MACD histogram and signal line crossovers to confirm trend changes
+- **EMA Price Position**: Price location relative to EMA30 to determine overall trend direction
+- **ATR Dynamic Stop-Loss**: Adaptive adjustment of stop-loss levels based on market volatility
+- **Visual Pattern Recognition**: Using CNN deep learning models to identify candlestick patterns
+- **Signal Confirmation Mechanism**: Requiring multiple consecutive signals before executing trades to reduce false breakouts
 
-## 🚦 Trade Walkthrough: A Single Trade
+## ⎦ Trading Process Breakdown
 
 ### Step 1: Entry Signal
-- A 5-candle sliding window is fed into the trained CNN model.
-- CNN outputs: `Uptrend (probability: 0.91)`
-- Entry Condition:
-  - Predicted trend = "Uptrend"
-  - The last candle in the window closes above the 20-period Simple Moving Average (SMA20)
+- MACD histogram turns positive (uptrend)
+- Price is above the EMA30 moving average
+- CNN model predicts an "uptrend"
+- At least 2 consecutive confirmation signals
+✅ **When conditions are met, buy at the current price**
 
-✅ **Enter a Long Position (Buy) at the opening of the next candle**
+### Step 2: Stop-Loss Setting
+- Initial stop-loss = Current price - (3.2 × ATR value)
+- As price increases, stop-loss level tracks upward (trailing stop)
 
-### Step 2: Exit Signal
-- Exit after **3 candles** (fixed holding period), OR:
-- If **CNN prediction flips to Downtrend** in an overlapping future window
+### Step 3: Exit Signal
+- MACD histogram turns negative (downtrend)
+- Price falls below EMA30
+- CNN model predicts "downtrend"
+- At least 2 consecutive confirmations
+Or: Price hits trailing stop-loss level
 
-### Step 3: Stop Loss / Risk Rule
-- Place a **stop loss at 1.5 × ATR(14)** below the entry price
-- No more than 2% of portfolio risked per trade
+### ⛓️ Risk Management Rules
+- Initial capital: $1,000,000 USD
+- Use all capital per trade
+- Trailing stops to lock in profit
+- Confirm multiple signals before executing
 
-### ⛓️ Additional Rules
-- Only one active trade at a time
-- No trades during low-volume periods (overnight hours or holidays)
+### 🧠 Candlestick Pattern Classification with CNN
+
+This project uses **CNNs** to classify candlestick chart patterns into bullish or bearish trends, automating the detection of key **reversal signals** in BTC/USDT trading. Over 60 TA-Lib functions are applied to extract meaningful windows, which are converted into chart images with SMA overlays and trend labels.
+
+The model learns visual features through stacked layers and achieves a test accuracy of **99.6%**.
 
 ---
 
 # 📅 Backtest Setup
 
-- Data: EUR/USD 15-min OHLC from 2020–2024
-- Technical Indicators: SMA, ATR
-- Pattern Recognition: `ta-lib` 61-patterns
-- Model: 3-layer CNN with image input of size 150×150
+- Data: BTC/USDT 15-minute candles (January–April 2025)
+- Indicators: MACD(12,26,9), EMA(30), ATR(14)
+- Model: CNN classifier, input size 150×150
 
 ---
 
-# 📊 Data Sample
-
-Here is a preview of the candlestick-based dataset used for training the model.
+# 📊 Trade Records (Blotter)
 
 ```{python}
 import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
 from IPython.display import display, HTML
 
-# Sample candlestick data
+blotter = pd.read_csv('source/blotter.csv')
+blotter['timestamp'] = pd.to_datetime(blotter['timestamp'])
+
+html_table = blotter.to_html(index=False, classes="table table-striped table-hover", border=1)
+scrollable = f"""
+<div style="overflow-x: auto; max-height: 500px;">
+  {html_table}
+</div>
+"""
+display(HTML("<h4>Trade Record Table</h4>" + scrollable))
+
+win_trades = (blotter['profit_percent'] > 0).sum()
+loss_trades = (blotter['profit_percent'] < 0).sum()
+win_rate = win_trades / (win_trades + loss_trades) if win_trades + loss_trades > 0 else 0
+
+fig = go.Figure(data=[go.Pie(
+    labels=['Profitable Trades', 'Loss Trades'],
+    values=[win_trades, loss_trades],
+    hole=0.4,
+    marker_colors=['rgba(0, 255, 0, 0.6)', 'rgba(255, 0, 0, 0.6)']
+)])
+fig.update_layout(
+    title=f'Trade Win Rate Analysis: {win_rate:.2%}',
+    annotations=[dict(text=f'{win_rate:.2%}', x=0.5, y=0.5, font_size=20, showarrow=False)]
+)
+fig.show()
+
+blotter['cumulative_return'] = (1 + blotter['profit_percent'] / 100).cumprod() - 1
+fig = px.line(
+    blotter,
+    x='timestamp',
+    y='cumulative_return',
+    title='Strategy Cumulative Return',
+    labels={'timestamp': 'Date', 'cumulative_return': 'Cumulative Return'},
+    template='plotly_white'
+)
+fig.update_layout(yaxis_tickformat='.2%', yaxis_hoverformat='.2%')
+fig.show()
+```
+
+---
+
+# 📒 Account Overview (Ledger)
+
+```{python}
+ledger = pd.read_csv('source/ledger.csv')
+ledger['timestamp'] = pd.to_datetime(ledger['timestamp'])
+
+html_table = ledger.to_html(index=False, classes="table table-bordered", border=1)
+display(HTML("<h4>Ledger Table</h4><div style='overflow-x:auto; max-height:500px;'>" + html_table + "</div>"))
+
+fig = px.line(
+    ledger,
+    x='timestamp',
+    y='market_value',
+    title='Account Equity Curve',
+    labels={'timestamp': 'Date', 'market_value': 'Account Value (USD)'},
+    template='plotly_white'
+)
+fig.add_hline(
+    y=1000000,
+    line_dash="dash",
+    line_color="red",
+    annotation_text="Initial Capital Level",
+    annotation_position="bottom right"
+)
+fig.update_layout(hovermode='x unified', yaxis_tickformat='$,.0f')
+fig.show()
+```
+
+---
+
+# 📈 Strategy Performance Analysis
+
+```{python}
+import numpy as np
+
+# Metrics
+total_trades = len(blotter)
+win_trades = (blotter['profit_percent'] > 0).sum()
+loss_trades = (blotter['profit_percent'] < 0).sum()
+win_rate = win_trades / total_trades if total_trades > 0 else 0
+avg_win = blotter.loc[blotter['profit_percent'] > 0, 'profit_percent'].mean()
+avg_loss = blotter.loc[blotter['profit_percent'] < 0, 'profit_percent'].mean()
+profit_factor = (blotter.loc[blotter['profit_percent'] > 0, 'profit_percent'].sum() /
+                 abs(blotter.loc[blotter['profit_percent'] < 0, 'profit_percent'].sum())) if loss_trades > 0 else float('inf')
+
+ledger['previous_peak'] = ledger['market_value'].cummax()
+ledger['drawdown'] = (ledger['market_value'] - ledger['previous_peak']) / ledger['previous_peak']
+max_drawdown = ledger['drawdown'].min()
+
+returns = ledger['market_value'].pct_change().dropna()
+sharpe_ratio = returns.mean() / returns.std() * np.sqrt(252)
+
+# Metrics Table
+metrics = pd.DataFrame({
+    "Metric": [
+        "Total Trades", "Winning Trades", "Losing Trades", "Win Rate",
+        "Average Profit", "Average Loss", "Profit Factor",
+        "Maximum Drawdown", "Sharpe Ratio"
+    ],
+    "Value": [
+        total_trades, win_trades, loss_trades, f"{win_rate:.2%}",
+        f"{avg_win:.2f}%", f"{avg_loss:.2f}%", f"{profit_factor:.2f}",
+        f"{max_drawdown:.2%}", f"{sharpe_ratio:.2f}"
+    ]
+})
+display(HTML("<h4>Performance Metrics</h4>" + metrics.to_html(index=False, classes="table table-hover")))
+```
+
+---
+
+# 📊 Additional Performance Charts
+
+```{python}
+# Trade Type Distribution
+action_counts = blotter['action'].value_counts().reset_index()
+action_counts.columns = ['Trade Type', 'Count']
+
+fig = px.pie(
+    action_counts,
+    values='Count',
+    names='Trade Type',
+    title='Trade Type Distribution',
+    hole=0.3,
+    template='plotly_white'
+)
+fig.update_traces(textposition='inside', textinfo='percent+label')
+fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
+fig.show()
+```
+
+---
+
+# 📊 Raw Data Sample
+
+```{python}
+# OHLC Candlestick Sample
 data = pd.DataFrame({
     "Open": [1.0854, 1.0861, 1.0870, 1.0878, 1.0884],
     "High": [1.0862, 1.0875, 1.0889, 1.0894, 1.0897],
@@ -66,8 +224,5 @@ data = pd.DataFrame({
     "Close": [1.0860, 1.0872, 1.0885, 1.0891, 1.0893],
     "Pattern": ["Hammer", "Doji", "Bullish Engulfing", "Morning Star", "Shooting Star"]
 })
-
-# Pretty HTML table
-html_table = data.to_html(index=False, border=1, justify="center", classes="table table-striped")
-display(HTML(html_table))
+display(HTML("<h4>OHLC Pattern Sample</h4>" + data.to_html(index=False, classes="table table-striped")))
 ```
