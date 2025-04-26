@@ -1,0 +1,1260 @@
+=== MACD+ATR平衡策略交易记录 ===
+
+数据源: ./BTCUSDT_M15_final.csv
+时间范围: 2025-01-03 09:00:00 至 2025-04-10 19:45:00
+
+策略参数:
+- MACD: (12,26,9)
+- EMA: 50日
+- ATR: 14日
+- ATR乘数: 2.5
+- 信号确认: 需要2个确认
+
+===== trading record =====
+
+stop loss sell - date: 2025-01-03 11:30:00, amount remaining: $0.00, profit and loss: 0.00%
+stop loss sell: $96271.88
+
+stop loss sell - date: 2025-01-03 23:30:00, amount remaining: $1013532.07, profit and loss: 1.35%
+remaining amount: $1013532.07
+
+stop loss sell - date: 2025-01-04 03:45:00, amount remaining: $0.00, profit and loss: 1.35%
+stop loss sell: $97679.56
+
+stop loss sell - date: 2025-01-04 04:30:00, amount remaining: $1010901.06, profit and loss: -0.26%
+remaining amount: $1010901.06
+
+stop loss sell - date: 2025-01-04 05:45:00, amount remaining: $0.00, profit and loss: -0.26%
+stop loss sell: $97569.63
+
+stop loss sell - date: 2025-01-04 09:00:00, amount remaining: $1008828.79, profit and loss: -0.20%
+remaining amount: $1008828.79
+
+stop loss sell - date: 2025-01-04 14:30:00, amount remaining: $0.00, profit and loss: -0.20%
+stop loss sell: $97688.63
+
+stop loss sell - date: 2025-01-04 15:30:00, amount remaining: $1003939.83, profit and loss: -0.48%
+remaing amount: $1003939.83
+
+stop loss sell - date: 2025-01-04 17:45:00, amount remaining: $0.00, profit and loss: -0.48%
+stop loss sell: $97583.74
+
+stop loss sell - date: 2025-01-05 00:45:00, amount remaining: $1005678.26, profit and loss: 0.17%
+remaining amount: $1005678.26
+
+stop loss sell - date: 2025-01-05 04:15:00, amount remaining: $0.00, profit and loss: 0.17%
+stop loss sell: $98056.91
+
+stop loss sell - date: 2025-01-05 08:00:00, amount remaining: $1000293.02, profit and loss: -0.54%
+remaing amount: $1000293.02
+
+stop loss sell - date: 2025-01-05 15:00:00, amount remaining: $0.00, profit and loss: -0.54%
+stop loss sell: $97422.00
+
+stop loss sell - date: 2025-01-05 17:45:00, amount remaining: $997947.96, profit and loss: -0.23%
+remaing amount: $997947.96
+
+stop loss sell - date: 2025-01-05 19:30:00, amount remaining: $0.00, profit and loss: -0.23%
+stop loss sell: $97553.46
+
+stop loss sell - date: 2025-01-06 01:00:00, amount remaining: $998565.22, profit and loss: 0.06%
+remaining amount: $998565.22
+
+stop loss sell - date: 2025-01-06 02:15:00, amount remaining: $0.00, profit and loss: 0.06%
+stop loss sell: $97915.95
+
+stop loss sell - date: 2025-01-06 08:45:00, amount remaining: $1001435.59, profit and loss: 0.29%
+remaining amount: $1001435.59
+
+stop loss sell - date: 2025-01-06 12:00:00, amount remaining: $0.00, profit and loss: 0.29%
+stop loss sell: $98909.50
+
+stop loss sell - date: 2025-01-07 03:30:00, amount remaining: $1024598.04, profit and loss: 2.31%
+remaining amount: $1024598.04
+
+stop loss sell - date: 2025-01-07 07:00:00, amount remaining: $0.00, profit and loss: 2.31%
+stop loss sell: $101311.81
+
+stop loss sell - date: 2025-01-07 09:45:00, amount remaining: $1022186.98, profit and loss: -0.24%
+remaining amount: $1022186.98
+
+stop loss sell - date: 2025-01-08 22:15:00, amount remaining: $0.00, profit and loss: -0.24%
+stop loss sell: $93210.50
+
+stop loss sell - date: 2025-01-09 02:15:00, amount remaining: $1021326.84, profit and loss: -0.08%
+remaining amount: $1021326.84
+
+stop loss sell - date: 2025-01-09 15:30:00, amount remaining: $0.00, profit and loss: -0.08%
+stop loss sell: $92675.68
+
+stop loss sell - date: 2025-01-09 17:45:00, amount remaining: $1012298.41, profit and loss: -0.88%
+remaing amount: $1012298.41
+
+stop loss sell - date: 2025-01-10 00:45:00, amount remaining: $0.00, profit and loss: -0.88%
+stop loss sell: $91791.86
+
+stop loss sell - date: 2025-01-10 13:30:00, amount remaining: $1019627.42, profit and loss: 0.72%
+remaing amount: $1019627.42
+
+stop loss sell - date: 2025-01-10 17:30:00, amount remaining: $0.00, profit and loss: 0.72%
+stop loss sell: $92651.39
+
+stop loss sell - date: 2025-01-10 21:45:00, amount remaining: $1020881.91, profit and loss: 0.12%
+remaining amount: $1020881.91
+
+stop loss sell - date: 2025-01-11 10:15:00, amount remaining: $0.00, profit and loss: 0.12%
+stop loss sell: $93967.27
+
+stop loss sell - date: 2025-01-11 13:30:00, amount remaining: $1020512.03, profit and loss: -0.04%
+remaining amount: $1020512.03
+
+stop loss sell - date: 2025-01-11 20:30:00, amount remaining: $0.00, profit and loss: -0.04%
+stop loss sell: $93977.82
+
+stop loss sell - date: 2025-01-12 01:00:00, amount remaining: $1019772.22, profit and loss: -0.07%
+remaining amount: $1019772.22
+
+stop loss sell - date: 2025-01-12 04:30:00, amount remaining: $0.00, profit and loss: -0.07%
+stop loss sell: $94053.88
+
+stop loss sell - date: 2025-01-12 06:30:00, amount remaining: $1019231.97, profit and loss: -0.05%
+remaining amount: $1019231.97
+
+stop loss sell - date: 2025-01-12 11:30:00, amount remaining: $0.00, profit and loss: -0.05%
+stop loss sell: $93823.70
+
+stop loss sell - date: 2025-01-12 19:15:00, amount remaining: $1024984.31, profit and loss: 0.56%
+remaining amount: $1024984.31
+
+stop loss sell - date: 2025-01-13 00:30:00, amount remaining: $0.00, profit and loss: 0.56%
+stop loss sell: $94981.70
+
+stop loss sell - date: 2025-01-13 01:30:00, amount remaining: $1014020.46, profit and loss: -1.07%
+remaing amount: $1014020.46
+
+stop loss sell - date: 2025-01-13 15:15:00, amount remaining: $0.00, profit and loss: -1.07%
+stop loss sell: $90274.09
+
+stop loss sell - date: 2025-01-14 12:15:00, amount remaining: $1056562.34, profit and loss: 4.20%
+remaing amount: $1056562.34
+
+stop loss sell - date: 2025-01-14 18:45:00, amount remaining: $0.00, profit and loss: 4.20%
+stop loss sell: $95548.07
+
+stop loss sell - date: 2025-01-15 05:45:00, amount remaining: $1055928.18, profit and loss: -0.06%
+remaining amount: $1055928.18
+
+stop loss sell - date: 2025-01-15 07:45:00, amount remaining: $0.00, profit and loss: -0.06%
+stop loss sell: $96357.75
+
+stop loss sell - date: 2025-01-15 09:30:00, amount remaining: $1051901.14, profit and loss: -0.38%
+remaining amount: $1051901.14
+
+stop loss sell - date: 2025-01-15 13:30:00, amount remaining: $0.00, profit and loss: -0.38%
+stop loss sell: $97554.72
+
+stop loss sell - date: 2025-01-16 02:45:00, amount remaining: $1062555.94, profit and loss: 1.01%
+remaining amount: $1062555.94
+
+stop loss sell - date: 2025-01-16 08:15:00, amount remaining: $0.00, profit and loss: 1.01%
+stop loss sell: $98897.64
+
+stop loss sell - date: 2025-01-16 08:45:00, amount remaining: $1055188.86, profit and loss: -0.69%
+remaining amount: $1055188.86
+
+stop loss sell - date: 2025-01-16 12:30:00, amount remaining: $0.00, profit and loss: -0.69%
+stop loss sell: $98494.43
+
+stop loss sell - date: 2025-01-16 13:30:00, amount remaining: $1052467.48, profit and loss: -0.26%
+remaining amount: $1052467.48
+
+stop loss sell - date: 2025-01-16 16:15:00, amount remaining: $0.00, profit and loss: -0.26%
+stop loss sell: $97657.05
+
+stop loss sell - date: 2025-01-16 22:30:00, amount remaining: $1053019.76, profit and loss: 0.05%
+remaining amount: $1053019.76
+
+stop loss sell - date: 2025-01-17 01:30:00, amount remaining: $0.00, profit and loss: 0.05%
+stop loss sell: $100203.40
+
+stop loss sell - date: 2025-01-17 23:00:00, amount remaining: $1081114.47, profit and loss: 2.67%
+remaining amount: $1081114.47
+
+stop loss sell - date: 2025-01-18 11:30:00, amount remaining: $0.00, profit and loss: 2.67%
+stop loss sell: $102359.88
+
+stop loss sell - date: 2025-01-18 16:45:00, amount remaining: $1076485.30, profit and loss: -0.43%
+remaing amount: $1076485.30
+
+stop loss sell - date: 2025-01-18 19:45:00, amount remaining: $0.00, profit and loss: -0.43%
+stop loss sell: $103261.64
+
+stop loss sell - date: 2025-01-19 08:15:00, amount remaining: $1078258.36, profit and loss: 0.16%
+remaining amount: $1078258.36
+
+stop loss sell - date: 2025-01-19 11:00:00, amount remaining: $0.00, profit and loss: 0.16%
+stop loss sell: $103666.56
+
+stop loss sell - date: 2025-01-19 11:45:00, amount remaining: $1072351.59, profit and loss: -0.55%
+remaining amount: $1072351.59
+
+stop loss sell - date: 2025-01-19 13:00:00, amount remaining: $0.00, profit and loss: -0.55%
+stop loss sell: $103536.16
+
+stop loss sell - date: 2025-01-19 15:15:00, amount remaining: $1069119.63, profit and loss: -0.30%
+remaining amount: $1069119.63
+
+stop loss sell - date: 2025-01-19 18:15:00, amount remaining: $0.00, profit and loss: -0.30%
+stop loss sell: $103659.60
+
+stop loss sell - date: 2025-01-19 21:15:00, amount remaining: $1065368.98, profit and loss: -0.35%
+remaing amount: $1065368.98
+
+stop loss sell - date: 2025-01-20 04:45:00, amount remaining: $0.00, profit and loss: -0.35%
+stop loss sell: $99921.50
+
+stop loss sell - date: 2025-01-20 12:30:00, amount remaining: $1109337.88, profit and loss: 4.13%
+remaining amount: $1109337.88
+
+stop loss sell - date: 2025-01-21 03:30:00, amount remaining: $0.00, profit and loss: 4.13%
+stop loss sell: $100163.86
+
+stop loss sell - date: 2025-01-21 06:00:00, amount remaining: $1099313.96, profit and loss: -0.90%
+remaining amount: $1099313.96
+
+stop loss sell - date: 2025-01-21 09:00:00, amount remaining: $0.00, profit and loss: -0.90%
+stop loss sell: $100563.27
+
+stop loss sell - date: 2025-01-21 14:45:00, amount remaining: $1111563.08, profit and loss: 1.11%
+remaing amount: $1111563.08
+
+stop loss sell - date: 2025-01-21 16:15:00, amount remaining: $0.00, profit and loss: 1.11%
+stop loss sell: $103305.34
+
+stop loss sell - date: 2025-01-22 01:15:00, amount remaining: $1112377.53, profit and loss: 0.07%
+remaining amount: $1112377.53
+
+stop loss sell - date: 2025-01-22 19:30:00, amount remaining: $0.00, profit and loss: 0.07%
+stop loss sell: $103092.06
+
+stop loss sell - date: 2025-01-22 21:30:00, amount remaining: $1105150.48, profit and loss: -0.65%
+remaining amount: $1105150.48
+
+stop loss sell - date: 2025-01-23 13:45:00, amount remaining: $0.00, profit and loss: -0.65%
+stop loss sell: $101077.89
+
+stop loss sell - date: 2025-01-23 20:45:00, amount remaining: $1117808.35, profit and loss: 1.15%
+remaing amount: $1117808.35
+
+stop loss sell - date: 2025-01-23 23:30:00, amount remaining: $0.00, profit and loss: 1.15%
+stop loss sell: $101481.15
+
+stop loss sell - date: 2025-01-24 00:45:00, amount remaining: $1111657.18, profit and loss: -0.55%
+remaining amount: $1111657.18
+
+stop loss sell - date: 2025-01-24 03:45:00, amount remaining: $0.00, profit and loss: -0.55%
+stop loss sell: $102425.69
+
+stop loss sell - date: 2025-01-24 14:00:00, amount remaining: $1119419.17, profit and loss: 0.70%
+remaining amount: $1119419.17
+
+stop loss sell - date: 2025-01-24 14:45:00, amount remaining: $0.00, profit and loss: 0.70%
+stop loss sell: $104194.51
+
+stop loss sell - date: 2025-01-24 20:00:00, amount remaining: $1122350.89, profit and loss: 0.26%
+remaining amount: $1122350.89
+
+stop loss sell - date: 2025-01-25 03:45:00, amount remaining: $0.00, profit and loss: 0.26%
+stop loss sell: $104297.95
+
+stop loss sell - date: 2025-01-25 06:00:00, amount remaining: $1113300.52, profit and loss: -0.81%
+remaining amount: $1113300.52
+
+stop loss sell - date: 2025-01-25 11:00:00, amount remaining: $0.00, profit and loss: -0.81%
+stop loss sell: $104023.05
+
+stop loss sell - date: 2025-01-26 00:00:00, amount remaining: $1115913.10, profit and loss: 0.23%
+remaining amount: $1115913.10
+
+stop loss sell - date: 2025-01-26 03:30:00, amount remaining: $0.00, profit and loss: 0.23%
+stop loss sell: $104583.46
+
+stop loss sell - date: 2025-01-26 09:15:00, amount remaining: $1112768.65, profit and loss: -0.28%
+remaining amount: $1112768.65
+
+stop loss sell - date: 2025-01-26 13:15:00, amount remaining: $0.00, profit and loss: -0.28%
+stop loss sell: $104485.74
+
+stop loss sell - date: 2025-01-26 21:00:00, amount remaining: $1110704.23, profit and loss: -0.19%
+remaining amount: $1110704.23
+
+stop loss sell - date: 2025-01-27 12:45:00, amount remaining: $0.00, profit and loss: -0.19%
+stop loss sell: $99150.98
+
+stop loss sell - date: 2025-01-27 16:30:00, amount remaining: $1101308.11, profit and loss: -0.85%
+remaing amount: $1101308.11
+
+stop loss sell - date: 2025-01-27 20:30:00, amount remaining: $0.00, profit and loss: -0.85%
+stop loss sell: $99115.89
+
+stop loss sell - date: 2025-01-28 12:30:00, amount remaining: $1119355.99, profit and loss: 1.64%
+remaining amount: $1119355.99
+
+stop loss sell - date: 2025-01-28 15:15:00, amount remaining: $0.00, profit and loss: 1.64%
+stop loss sell: $101851.20
+
+stop loss sell - date: 2025-01-28 16:30:00, amount remaining: $1109310.63, profit and loss: -0.90%
+remaining amount: $1109310.63
+
+stop loss sell - date: 2025-01-28 17:15:00, amount remaining: $0.00, profit and loss: -0.90%
+stop loss sell: $101310.02
+
+stop loss sell - date: 2025-01-28 19:00:00, amount remaining: $1100528.02, profit and loss: -0.79%
+remaining amount: $1100528.02
+
+stop loss sell - date: 2025-01-29 00:45:00, amount remaining: $0.00, profit and loss: -0.79%
+stop loss sell: $100496.04
+
+stop loss sell - date: 2025-01-29 12:45:00, amount remaining: $1104939.71, profit and loss: 0.40%
+remaing amount: $1104939.71
+
+stop loss sell - date: 2025-01-29 17:15:00, amount remaining: $0.00, profit and loss: 0.40%
+stop loss sell: $101497.80
+
+stop loss sell - date: 2025-01-29 19:00:00, amount remaining: $1100388.48, profit and loss: -0.41%
+remaing amount: $1100388.48
+
+stop loss sell - date: 2025-01-29 19:45:00, amount remaining: $0.00, profit and loss: -0.41%
+stop loss sell: $102063.26
+
+stop loss sell - date: 2025-01-30 12:30:00, amount remaining: $1111548.12, profit and loss: 1.01%
+remaining amount: $1111548.12
+
+stop loss sell - date: 2025-01-30 15:00:00, amount remaining: $0.00, profit and loss: 1.01%
+stop loss sell: $105275.21
+
+stop loss sell - date: 2025-01-30 17:15:00, amount remaining: $1100375.92, profit and loss: -1.01%
+remaing amount: $1100375.92
+
+stop loss sell - date: 2025-01-30 20:00:00, amount remaining: $0.00, profit and loss: -1.01%
+stop loss sell: $104850.94
+
+stop loss sell - date: 2025-01-30 20:45:00, amount remaining: $1091687.30, profit and loss: -0.79%
+remaining amount: $1091687.30
+
+stop loss sell - date: 2025-01-31 06:30:00, amount remaining: $0.00, profit and loss: -0.79%
+stop loss sell: $103961.80
+
+stop loss sell - date: 2025-01-31 08:00:00, amount remaining: $1086339.47, profit and loss: -0.49%
+remaing amount: $1086339.47
+
+stop loss sell - date: 2025-01-31 11:00:00, amount remaining: $0.00, profit and loss: -0.49%
+stop loss sell: $104084.38
+
+stop loss sell - date: 2025-01-31 14:45:00, amount remaining: $1082807.62, profit and loss: -0.33%
+remaing amount: $1082807.62
+
+stop loss sell - date: 2025-01-31 15:30:00, amount remaining: $0.00, profit and loss: -0.33%
+stop loss sell: $104642.98
+
+stop loss sell - date: 2025-01-31 17:45:00, amount remaining: $1074005.54, profit and loss: -0.81%
+remaining amount: $1074005.54
+
+stop loss sell - date: 2025-02-01 12:15:00, amount remaining: $0.00, profit and loss: -0.81%
+stop loss sell: $101718.55
+
+stop loss sell - date: 2025-02-01 13:45:00, amount remaining: $1071233.14, profit and loss: -0.26%
+remaing amount: $1071233.14
+
+stop loss sell - date: 2025-02-01 16:00:00, amount remaining: $0.00, profit and loss: -0.26%
+stop loss sell: $101597.76
+
+stop loss sell - date: 2025-02-01 19:00:00, amount remaining: $1067994.32, profit and loss: -0.30%
+remaining amount: $1067994.32
+
+stop loss sell - date: 2025-02-02 01:15:00, amount remaining: $0.00, profit and loss: -0.30%
+stop loss sell: $100512.43
+
+stop loss sell - date: 2025-02-02 02:45:00, amount remaining: $1059576.12, profit and loss: -0.79%
+remaing amount: $1059576.12
+
+stop loss sell - date: 2025-02-02 14:30:00, amount remaining: $0.00, profit and loss: -0.79%
+stop loss sell: $98651.98
+
+stop loss sell - date: 2025-02-02 16:45:00, amount remaining: $1047123.48, profit and loss: -1.18%
+remaing amount: $1047123.48
+
+stop loss sell - date: 2025-02-03 07:45:00, amount remaining: $0.00, profit and loss: -1.18%
+stop loss sell: $93395.08
+
+stop loss sell - date: 2025-02-03 13:00:00, amount remaining: $1040742.73, profit and loss: -0.61%
+remaining amount: $1040742.73
+
+stop loss sell - date: 2025-02-03 14:45:00, amount remaining: $0.00, profit and loss: -0.61%
+stop loss sell: $94594.50
+
+stop loss sell - date: 2025-02-04 03:30:00, amount remaining: $1084736.77, profit and loss: 4.23%
+remaining amount: $1084736.77
+
+stop loss sell - date: 2025-02-04 11:15:00, amount remaining: $0.00, profit and loss: 4.23%
+stop loss sell: $98235.20
+
+stop loss sell - date: 2025-02-04 17:30:00, amount remaining: $1083593.28, profit and loss: -0.11%
+remaining amount: $1083593.28
+
+stop loss sell - date: 2025-02-04 19:15:00, amount remaining: $0.00, profit and loss: -0.11%
+stop loss sell: $99073.31
+
+stop loss sell - date: 2025-02-04 19:45:00, amount remaining: $1064744.58, profit and loss: -1.74%
+remaing amount: $1064744.58
+
+stop loss sell - date: 2025-02-05 01:00:00, amount remaining: $0.00, profit and loss: -1.74%
+stop loss sell: $96782.76
+
+stop loss sell - date: 2025-02-05 06:45:00, amount remaining: $1055584.76, profit and loss: -0.86%
+remaining amount: $1055584.76
+
+stop loss sell - date: 2025-02-05 10:30:00, amount remaining: $0.00, profit and loss: -0.86%
+stop loss sell: $97235.26
+
+stop loss sell - date: 2025-02-05 14:45:00, amount remaining: $1057321.58, profit and loss: 0.16%
+remaing amount: $1057321.58
+
+stop loss sell - date: 2025-02-06 01:45:00, amount remaining: $0.00, profit and loss: 0.16%
+stop loss sell: $96117.08
+
+stop loss sell - date: 2025-02-06 13:00:00, amount remaining: $1070327.90, profit and loss: 1.23%
+remaining amount: $1070327.90
+
+stop loss sell - date: 2025-02-07 01:45:00, amount remaining: $0.00, profit and loss: 1.23%
+stop loss sell: $96327.08
+
+stop loss sell - date: 2025-02-07 06:30:00, amount remaining: $1063761.98, profit and loss: -0.61%
+remaining amount: $1063761.98
+
+stop loss sell - date: 2025-02-07 09:15:00, amount remaining: $0.00, profit and loss: -0.61%
+stop loss sell: $96607.04
+
+stop loss sell - date: 2025-02-07 15:00:00, amount remaining: $1075280.48, profit and loss: 1.08%
+remaing amount: $1075280.48
+
+stop loss sell - date: 2025-02-07 15:30:00, amount remaining: $0.00, profit and loss: 1.08%
+stop loss sell: $97159.06
+
+stop loss sell - date: 2025-02-07 16:45:00, amount remaining: $1069134.35, profit and loss: -0.57%
+remaining amount: $1069134.35
+
+stop loss sell - date: 2025-02-08 00:30:00, amount remaining: $0.00, profit and loss: -0.57%
+stop loss sell: $95915.24
+
+stop loss sell - date: 2025-02-08 04:45:00, amount remaining: $1064048.49, profit and loss: -0.48%
+remaining amount: $1064048.49
+
+stop loss sell - date: 2025-02-08 13:15:00, amount remaining: $0.00, profit and loss: -0.48%
+stop loss sell: $95824.40
+
+stop loss sell - date: 2025-02-08 15:15:00, amount remaining: $1061747.61, profit and loss: -0.22%
+remaing amount: $1061747.61
+
+stop loss sell - date: 2025-02-08 17:15:00, amount remaining: $0.00, profit and loss: -0.22%
+stop loss sell: $95742.98
+
+stop loss sell - date: 2025-02-09 00:30:00, amount remaining: $1063755.45, profit and loss: 0.19%
+remaining amount: $1063755.45
+
+stop loss sell - date: 2025-02-09 01:30:00, amount remaining: $0.00, profit and loss: 0.19%
+stop loss sell: $96227.24
+
+stop loss sell - date: 2025-02-09 10:00:00, amount remaining: $1063951.22, profit and loss: 0.02%
+remaining amount: $1063951.22
+
+stop loss sell - date: 2025-02-09 20:30:00, amount remaining: $0.00, profit and loss: 0.02%
+stop loss sell: $95871.60
+
+stop loss sell - date: 2025-02-09 21:30:00, amount remaining: $1049028.45, profit and loss: -1.40%
+remaing amount: $1049028.45
+
+stop loss sell - date: 2025-02-09 23:45:00, amount remaining: $0.00, profit and loss: -1.40%
+stop loss sell: $95402.20
+
+stop loss sell - date: 2025-02-10 01:30:00, amount remaining: $1039815.02, profit and loss: -0.88%
+remaing amount: $1039815.02
+
+stop loss sell - date: 2025-02-10 03:45:00, amount remaining: $0.00, profit and loss: -0.88%
+stop loss sell: $95645.20
+
+stop loss sell - date: 2025-02-10 12:45:00, amount remaining: $1045055.73, profit and loss: 0.50%
+remaining amount: $1045055.73
+
+stop loss sell - date: 2025-02-10 18:00:00, amount remaining: $0.00, profit and loss: 0.50%
+stop loss sell: $96628.91
+
+stop loss sell - date: 2025-02-10 21:00:00, amount remaining: $1043879.37, profit and loss: -0.11%
+remaining amount: $1043879.37
+
+stop loss sell - date: 2025-02-10 22:45:00, amount remaining: $0.00, profit and loss: -0.11%
+stop loss sell: $96871.22
+
+stop loss sell - date: 2025-02-10 23:30:00, amount remaining: $1042041.70, profit and loss: -0.18%
+remaining amount: $1042041.70
+
+stop loss sell - date: 2025-02-11 00:00:00, amount remaining: $0.00, profit and loss: -0.18%
+stop loss sell: $97177.22
+
+stop loss sell - date: 2025-02-11 03:15:00, amount remaining: $1040531.23, profit and loss: -0.14%
+remaining amount: $1040531.23
+
+stop loss sell - date: 2025-02-11 05:00:00, amount remaining: $0.00, profit and loss: -0.14%
+stop loss sell: $97538.26
+
+stop loss sell - date: 2025-02-11 09:45:00, amount remaining: $1039256.40, profit and loss: -0.12%
+remaining amount: $1039256.40
+
+stop loss sell - date: 2025-02-11 21:45:00, amount remaining: $0.00, profit and loss: -0.12%
+stop loss sell: $95367.74
+
+stop loss sell - date: 2025-02-12 02:45:00, amount remaining: $1030365.18, profit and loss: -0.86%
+remaing amount: $1030365.18
+
+stop loss sell - date: 2025-02-12 05:30:00, amount remaining: $0.00, profit and loss: -0.86%
+stop loss sell: $95059.44
+
+stop loss sell - date: 2025-02-12 13:00:00, amount remaining: $1031332.87, profit and loss: 0.09%
+remaining amount: $1031332.87
+
+stop loss sell - date: 2025-02-12 16:45:00, amount remaining: $0.00, profit and loss: 0.09%
+stop loss sell: $95241.35
+
+stop loss sell - date: 2025-02-13 03:15:00, amount remaining: $1035764.21, profit and loss: 0.43%
+remaining amount: $1035764.21
+
+stop loss sell - date: 2025-02-13 19:00:00, amount remaining: $0.00, profit and loss: 0.43%
+stop loss sell: $95229.68
+
+stop loss sell - date: 2025-02-14 12:15:00, amount remaining: $1040046.95, profit and loss: 0.41%
+remaining amount: $1040046.95
+
+stop loss sell - date: 2025-02-14 14:45:00, amount remaining: $0.00, profit and loss: 0.41%
+stop loss sell: $96766.90
+
+stop loss sell - date: 2025-02-14 15:00:00, amount remaining: $1032222.82, profit and loss: -0.75%
+remaing amount: $1032222.82
+
+stop loss sell - date: 2025-02-14 17:00:00, amount remaining: $0.00, profit and loss: -0.75%
+stop loss sell: $96237.91
+
+stop loss sell - date: 2025-02-14 20:45:00, amount remaining: $1032247.78, profit and loss: 0.00%
+remaing amount: $1032247.78
+
+stop loss sell - date: 2025-02-15 01:15:00, amount remaining: $0.00, profit and loss: 0.00%
+stop loss sell: $96937.05
+
+stop loss sell - date: 2025-02-15 04:45:00, amount remaining: $1030679.52, profit and loss: -0.15%
+remaining amount: $1030679.52
+
+stop loss sell - date: 2025-02-15 10:00:00, amount remaining: $0.00, profit and loss: -0.15%
+stop loss sell: $97110.90
+
+stop loss sell - date: 2025-02-15 14:30:00, amount remaining: $1029491.95, profit and loss: -0.12%
+remaing amount: $1029491.95
+
+stop loss sell - date: 2025-02-15 19:15:00, amount remaining: $0.00, profit and loss: -0.12%
+stop loss sell: $97225.54
+
+stop loss sell - date: 2025-02-16 03:00:00, amount remaining: $1027569.48, profit and loss: -0.19%
+remaining amount: $1027569.48
+
+stop loss sell - date: 2025-02-16 05:45:00, amount remaining: $0.00, profit and loss: -0.19%
+stop loss sell: $97366.58
+
+stop loss sell - date: 2025-02-16 07:15:00, amount remaining: $1024729.11, profit and loss: -0.28%
+remaining amount: $1024729.11
+
+stop loss sell - date: 2025-02-16 17:15:00, amount remaining: $0.00, profit and loss: -0.28%
+stop loss sell: $96686.65
+
+stop loss sell - date: 2025-02-16 18:30:00, amount remaining: $1021760.34, profit and loss: -0.29%
+remaining amount: $1021760.34
+
+stop loss sell - date: 2025-02-16 19:45:00, amount remaining: $0.00, profit and loss: -0.29%
+stop loss sell: $96623.05
+
+stop loss sell - date: 2025-02-16 22:30:00, amount remaining: $1018122.52, profit and loss: -0.36%
+remaing amount: $1018122.52
+
+stop loss sell - date: 2025-02-17 06:15:00, amount remaining: $0.00, profit and loss: -0.36%
+stop loss sell: $95809.46
+
+stop loss sell - date: 2025-02-17 15:30:00, amount remaining: $1015308.65, profit and loss: -0.28%
+remaing amount: $1015308.65
+
+stop loss sell - date: 2025-02-17 20:30:00, amount remaining: $0.00, profit and loss: -0.28%
+stop loss sell: $95352.67
+
+stop loss sell - date: 2025-02-17 23:45:00, amount remaining: $1013097.20, profit and loss: -0.22%
+remaing amount: $1013097.20
+
+stop loss sell - date: 2025-02-18 02:00:00, amount remaining: $0.00, profit and loss: -0.22%
+stop loss sell: $95531.60
+
+stop loss sell - date: 2025-02-18 05:00:00, amount remaining: $1010492.53, profit and loss: -0.26%
+remaining amount: $1010492.53
+
+stop loss sell - date: 2025-02-18 09:30:00, amount remaining: $0.00, profit and loss: -0.26%
+stop loss sell: $95051.02
+
+stop loss sell - date: 2025-02-18 14:45:00, amount remaining: $1011252.80, profit and loss: 0.08%
+remaing amount: $1011252.80
+
+stop loss sell - date: 2025-02-18 21:15:00, amount remaining: $0.00, profit and loss: 0.08%
+stop loss sell: $94070.67
+
+stop loss sell - date: 2025-02-19 05:00:00, amount remaining: $1012001.68, profit and loss: 0.07%
+remaining amount: $1012001.68
+
+stop loss sell - date: 2025-02-19 07:15:00, amount remaining: $0.00, profit and loss: 0.07%
+stop loss sell: $95087.69
+
+stop loss sell - date: 2025-02-19 14:45:00, amount remaining: $1013628.27, profit and loss: 0.16%
+remaing amount: $1013628.27
+
+stop loss sell - date: 2025-02-19 17:15:00, amount remaining: $0.00, profit and loss: 0.16%
+stop loss sell: $95474.88
+
+stop loss sell - date: 2025-02-19 18:45:00, amount remaining: $1007621.00, profit and loss: -0.59%
+remaing amount: $1007621.00
+
+stop loss sell - date: 2025-02-19 20:15:00, amount remaining: $0.00, profit and loss: -0.59%
+stop loss sell: $95503.58
+
+stop loss sell - date: 2025-02-20 07:00:00, amount remaining: $1012204.29, profit and loss: 0.45%
+remaining amount: $1012204.29
+
+stop loss sell - date: 2025-02-20 09:15:00, amount remaining: $0.00, profit and loss: 0.45%
+stop loss sell: $96694.41
+
+stop loss sell - date: 2025-02-20 14:45:00, amount remaining: $1009900.06, profit and loss: -0.23%
+remaing amount: $1009900.06
+
+stop loss sell - date: 2025-02-20 16:45:00, amount remaining: $0.00, profit and loss: -0.23%
+stop loss sell: $96603.69
+
+stop loss sell - date: 2025-02-21 03:00:00, amount remaining: $1016168.97, profit and loss: 0.62%
+remaining amount: $1016168.97
+
+stop loss sell - date: 2025-02-21 05:30:00, amount remaining: $0.00, profit and loss: 0.62%
+stop loss sell: $97870.95
+
+stop loss sell - date: 2025-02-21 08:00:00, amount remaining: $1014827.41, profit and loss: -0.13%
+remaining amount: $1014827.41
+
+stop loss sell - date: 2025-02-21 10:00:00, amount remaining: $0.00, profit and loss: -0.13%
+stop loss sell: $97787.75
+
+stop loss sell - date: 2025-02-21 14:30:00, amount remaining: $1016941.31, profit and loss: 0.21%
+remaing amount: $1016941.31
+
+stop loss sell - date: 2025-02-22 01:00:00, amount remaining: $0.00, profit and loss: 0.21%
+stop loss sell: $95161.59
+
+stop loss sell - date: 2025-02-22 08:15:00, amount remaining: $1017399.19, profit and loss: 0.05%
+remaining amount: $1017399.19
+
+stop loss sell - date: 2025-02-22 10:15:00, amount remaining: $0.00, profit and loss: 0.05%
+stop loss sell: $96119.21
+
+stop loss sell - date: 2025-02-22 14:30:00, amount remaining: $1017659.13, profit and loss: 0.03%
+remaing amount: $1017659.13
+
+stop loss sell - date: 2025-02-22 18:30:00, amount remaining: $0.00, profit and loss: 0.03%
+stop loss sell: $96346.10
+
+stop loss sell - date: 2025-02-22 19:00:00, amount remaining: $1015434.98, profit and loss: -0.22%
+remaining amount: $1015434.98
+
+stop loss sell - date: 2025-02-22 22:15:00, amount remaining: $0.00, profit and loss: -0.22%
+stop loss sell: $96261.92
+
+stop loss sell - date: 2025-02-23 00:15:00, amount remaining: $1015020.42, profit and loss: -0.04%
+remaining amount: $1015020.42
+
+stop loss sell - date: 2025-02-23 01:00:00, amount remaining: $0.00, profit and loss: -0.04%
+stop loss sell: $96360.83
+
+stop loss sell - date: 2025-02-23 02:15:00, amount remaining: $1013254.74, profit and loss: -0.17%
+remaining amount: $1013254.74
+
+stop loss sell - date: 2025-02-23 07:45:00, amount remaining: $0.00, profit and loss: -0.17%
+stop loss sell: $96114.34
+
+stop loss sell - date: 2025-02-23 10:30:00, amount remaining: $1009602.54, profit and loss: -0.36%
+remaing amount: $1009602.54
+
+stop loss sell - date: 2025-02-23 19:15:00, amount remaining: $0.00, profit and loss: -0.36%
+stop loss sell: $95453.72
+
+stop loss sell - date: 2025-02-24 01:45:00, amount remaining: $1010259.58, profit and loss: 0.07%
+remaining amount: $1010259.58
+
+stop loss sell - date: 2025-02-24 07:00:00, amount remaining: $0.00, profit and loss: 0.07%
+stop loss sell: $95276.00
+
+stop loss sell - date: 2025-02-24 08:45:00, amount remaining: $1006638.25, profit and loss: -0.36%
+remaining amount: $1006638.25
+
+stop loss sell - date: 2025-02-24 09:30:00, amount remaining: $0.00, profit and loss: -0.36%
+stop loss sell: $95313.40
+
+stop loss sell - date: 2025-02-24 10:45:00, amount remaining: $1003360.59, profit and loss: -0.33%
+remaining amount: $1003360.59
+
+stop loss sell - date: 2025-02-24 11:45:00, amount remaining: $0.00, profit and loss: -0.33%
+stop loss sell: $95293.71
+
+stop loss sell - date: 2025-02-24 14:15:00, amount remaining: $998957.46, profit and loss: -0.44%
+remaing amount: $998957.46
+
+stop loss sell - date: 2025-02-25 20:00:00, amount remaining: $0.00, profit and loss: -0.44%
+stop loss sell: $86207.06
+
+stop loss sell - date: 2025-02-26 00:30:00, amount remaining: $1003293.31, profit and loss: 0.43%
+remaining amount: $1003293.31
+
+stop loss sell - date: 2025-02-26 03:00:00, amount remaining: $0.00, profit and loss: 0.43%
+stop loss sell: $88155.56
+
+stop loss sell - date: 2025-02-26 06:00:00, amount remaining: $997316.78, profit and loss: -0.60%
+remaining amount: $997316.78
+
+stop loss sell - date: 2025-02-26 09:45:00, amount remaining: $0.00, profit and loss: -0.60%
+stop loss sell: $88525.04
+
+stop loss sell - date: 2025-02-26 12:00:00, amount remaining: $989052.43, profit and loss: -0.83%
+remaing amount: $989052.43
+
+stop loss sell - date: 2025-02-27 01:30:00, amount remaining: $0.00, profit and loss: -0.83%
+stop loss sell: $83226.05
+
+stop loss sell - date: 2025-02-27 14:00:00, amount remaining: $1002858.66, profit and loss: 1.40%
+remaining amount: $1002858.66
+
+stop loss sell - date: 2025-02-27 23:00:00, amount remaining: $0.00, profit and loss: 1.40%
+stop loss sell: $83291.15
+
+stop loss sell - date: 2025-02-28 01:15:00, amount remaining: $986057.86, profit and loss: -1.68%
+remaing amount: $986057.86
+
+stop loss sell - date: 2025-02-28 09:30:00, amount remaining: $0.00, profit and loss: -1.68%
+stop loss sell: $78243.36
+
+stop loss sell - date: 2025-03-01 06:45:00, amount remaining: $1043120.75, profit and loss: 5.79%
+remaing amount: $1043120.75
+
+stop loss sell - date: 2025-03-01 15:15:00, amount remaining: $0.00, profit and loss: 5.79%
+stop loss sell: $84168.32
+
+stop loss sell - date: 2025-03-02 03:45:00, amount remaining: $1054919.17, profit and loss: 1.13%
+remaining amount: $1054919.17
+
+stop loss sell - date: 2025-03-02 06:30:00, amount remaining: $0.00, profit and loss: 1.13%
+stop loss sell: $85677.14
+
+stop loss sell - date: 2025-03-02 08:15:00, amount remaining: $1050795.71, profit and loss: -0.39%
+remaining amount: $1050795.71
+
+stop loss sell - date: 2025-03-02 15:30:00, amount remaining: $0.00, profit and loss: -0.39%
+stop loss sell: $86544.49
+
+stop loss sell - date: 2025-03-03 01:15:00, amount remaining: $1107837.98, profit and loss: 5.43%
+remaining amount: $1107837.98
+
+stop loss sell - date: 2025-03-03 05:45:00, amount remaining: $0.00, profit and loss: 5.43%
+stop loss sell: $92046.02
+
+stop loss sell - date: 2025-03-03 06:45:00, amount remaining: $1087196.55, profit and loss: -1.86%
+remaing amount: $1087196.55
+
+stop loss sell - date: 2025-03-03 10:45:00, amount remaining: $0.00, profit and loss: -1.86%
+stop loss sell: $90961.27
+
+stop loss sell - date: 2025-03-03 14:30:00, amount remaining: $1075381.70, profit and loss: -1.09%
+remaing amount: $1075381.70
+
+stop loss sell - date: 2025-03-04 17:00:00, amount remaining: $0.00, profit and loss: -1.09%
+stop loss sell: $81139.79
+
+stop loss sell - date: 2025-03-05 00:45:00, amount remaining: $1116318.37, profit and loss: 3.81%
+remaining amount: $1116318.37
+
+stop loss sell - date: 2025-03-05 07:00:00, amount remaining: $0.00, profit and loss: 3.81%
+stop loss sell: $86536.11
+
+stop loss sell - date: 2025-03-05 13:30:00, amount remaining: $1136580.46, profit and loss: 1.82%
+remaing amount: $1136580.46
+
+stop loss sell - date: 2025-03-05 17:30:00, amount remaining: $0.00, profit and loss: 1.82%
+stop loss sell: $87622.11
+
+stop loss sell - date: 2025-03-06 09:00:00, amount remaining: $1150699.77, profit and loss: 1.24%
+remaing amount: $1150699.77
+
+stop loss sell - date: 2025-03-06 15:30:00, amount remaining: $0.00, profit and loss: 1.24%
+stop loss sell: $89448.05
+
+stop loss sell - date: 2025-03-06 16:45:00, amount remaining: $1127341.56, profit and loss: -2.03%
+remaing amount: $1127341.56
+
+stop loss sell - date: 2025-03-06 21:15:00, amount remaining: $0.00, profit and loss: -2.03%
+stop loss sell: $87853.03
+
+stop loss sell - date: 2025-03-07 00:15:00, amount remaining: $1097425.45, profit and loss: -2.65%
+remaing amount: $1097425.45
+
+stop loss sell - date: 2025-03-07 05:30:00, amount remaining: $0.00, profit and loss: -2.65%
+stop loss sell: $86299.11
+
+stop loss sell - date: 2025-03-07 15:45:00, amount remaining: $1098215.35, profit and loss: 0.07%
+remaing amount: $1098215.35
+
+stop loss sell - date: 2025-03-07 18:45:00, amount remaining: $0.00, profit and loss: 0.07%
+stop loss sell: $86654.15
+
+stop loss sell - date: 2025-03-07 20:30:00, amount remaining: $1082141.67, profit and loss: -1.46%
+remaining amount: $1082141.67
+
+stop loss sell - date: 2025-03-08 04:45:00, amount remaining: $0.00, profit and loss: -1.46%
+stop loss sell: $85307.04
+
+stop loss sell - date: 2025-03-08 09:00:00, amount remaining: $1078632.11, profit and loss: -0.32%
+remaining amount: $1078632.11
+
+stop loss sell - date: 2025-03-08 12:30:00, amount remaining: $0.00, profit and loss: -0.32%
+stop loss sell: $85672.56
+
+stop loss sell - date: 2025-03-08 16:30:00, amount remaining: $1074673.93, profit and loss: -0.37%
+remaining amount: $1074673.93
+
+stop loss sell - date: 2025-03-08 19:30:00, amount remaining: $0.00, profit and loss: -0.37%
+stop loss sell: $85771.93
+
+stop loss sell - date: 2025-03-08 22:15:00, amount remaining: $1068860.06, profit and loss: -0.54%
+remaining amount: $1068860.06
+
+stop loss sell - date: 2025-03-09 00:30:00, amount remaining: $0.00, profit and loss: -0.54%
+stop loss sell: $85836.54
+
+stop loss sell - date: 2025-03-09 02:00:00, amount remaining: $1066076.02, profit and loss: -0.26%
+remaining amount: $1066076.02
+
+stop loss sell - date: 2025-03-10 02:15:00, amount remaining: $0.00, profit and loss: -0.26%
+stop loss sell: $80576.71
+
+stop loss sell - date: 2025-03-10 08:15:00, amount remaining: $1060924.55, profit and loss: -0.48%
+remaining amount: $1060924.55
+
+stop loss sell - date: 2025-03-10 09:30:00, amount remaining: $0.00, profit and loss: -0.48%
+stop loss sell: $81231.58
+
+stop loss sell - date: 2025-03-10 10:30:00, amount remaining: $1051263.94, profit and loss: -0.91%
+remaining amount: $1051263.94
+
+stop loss sell - date: 2025-03-10 11:15:00, amount remaining: $0.00, profit and loss: -0.91%
+stop loss sell: $81100.80
+
+stop loss sell - date: 2025-03-10 13:45:00, amount remaining: $1038883.87, profit and loss: -1.18%
+remaing amount: $1038883.87
+
+stop loss sell - date: 2025-03-10 21:15:00, amount remaining: $0.00, profit and loss: -1.18%
+stop loss sell: $77777.63
+
+stop loss sell - date: 2025-03-11 00:15:00, amount remaining: $1010191.55, profit and loss: -2.76%
+remaing amount: $1010191.55
+
+stop loss sell - date: 2025-03-11 02:15:00, amount remaining: $0.00, profit and loss: -2.76%
+stop loss sell: $77629.78
+
+stop loss sell - date: 2025-03-11 13:00:00, amount remaining: $1025018.52, profit and loss: 1.47%
+remaing amount: $1025018.52
+
+stop loss sell - date: 2025-03-11 16:30:00, amount remaining: $0.00, profit and loss: 1.47%
+stop loss sell: $79553.77
+
+stop loss sell - date: 2025-03-12 02:30:00, amount remaining: $1034372.16, profit and loss: 0.91%
+remaing amount: $1034372.16
+
+stop loss sell - date: 2025-03-12 08:00:00, amount remaining: $0.00, profit and loss: 0.91%
+stop loss sell: $81720.98
+
+stop loss sell - date: 2025-03-12 13:45:00, amount remaining: $1030993.48, profit and loss: -0.33%
+remaing amount: $1030993.48
+
+stop loss sell - date: 2025-03-12 17:30:00, amount remaining: $0.00, profit and loss: -0.33%
+stop loss sell: $81104.19
+
+stop loss sell - date: 2025-03-13 04:30:00, amount remaining: $1040659.29, profit and loss: 0.94%
+remaining amount: $1040659.29
+
+stop loss sell - date: 2025-03-13 09:30:00, amount remaining: $0.00, profit and loss: 0.94%
+stop loss sell: $82406.11
+
+stop loss sell - date: 2025-03-13 11:30:00, amount remaining: $1036476.85, profit and loss: -0.40%
+remaining amount: $1036476.85
+
+stop loss sell - date: 2025-03-13 22:30:00, amount remaining: $0.00, profit and loss: -0.40%
+stop loss sell: $80059.14
+
+stop loss sell - date: 2025-03-14 14:15:00, amount remaining: $1056232.49, profit and loss: 1.91%
+remaing amount: $1056232.49
+
+stop loss sell - date: 2025-03-14 15:30:00, amount remaining: $0.00, profit and loss: 1.91%
+stop loss sell: $83794.98
+
+stop loss sell - date: 2025-03-14 20:30:00, amount remaining: $1044329.59, profit and loss: -1.13%
+remaining amount: $1044329.59
+
+stop loss sell - date: 2025-03-15 01:30:00, amount remaining: $0.00, profit and loss: -1.13%
+stop loss sell: $83582.07
+
+stop loss sell - date: 2025-03-15 07:00:00, amount remaining: $1039718.28, profit and loss: -0.44%
+remaining amount: $1039718.28
+
+stop loss sell - date: 2025-03-15 11:45:00, amount remaining: $0.00, profit and loss: -0.44%
+stop loss sell: $83608.38
+
+stop loss sell - date: 2025-03-15 18:30:00, amount remaining: $1040750.34, profit and loss: 0.10%
+remaining amount: $1040750.34
+
+stop loss sell - date: 2025-03-15 21:00:00, amount remaining: $0.00, profit and loss: 0.10%
+stop loss sell: $83958.45
+
+stop loss sell - date: 2025-03-15 23:15:00, amount remaining: $1039976.42, profit and loss: -0.07%
+remaining amount: $1039976.42
+
+stop loss sell - date: 2025-03-16 03:45:00, amount remaining: $0.00, profit and loss: -0.07%
+stop loss sell: $83912.63
+
+stop loss sell - date: 2025-03-16 07:00:00, amount remaining: $1035609.47, profit and loss: -0.42%
+remaing amount: $1035609.47
+
+stop loss sell - date: 2025-03-16 15:00:00, amount remaining: $0.00, profit and loss: -0.42%
+stop loss sell: $82564.93
+
+stop loss sell - date: 2025-03-16 19:15:00, amount remaining: $1033527.45, profit and loss: -0.20%
+remaining amount: $1033527.45
+
+stop loss sell - date: 2025-03-17 01:00:00, amount remaining: $0.00, profit and loss: -0.20%
+stop loss sell: $82146.76
+
+stop loss sell - date: 2025-03-17 05:45:00, amount remaining: $1037479.61, profit and loss: 0.38%
+remaining amount: $1037479.61
+
+stop loss sell - date: 2025-03-17 08:15:00, amount remaining: $0.00, profit and loss: 0.38%
+stop loss sell: $82925.17
+
+stop loss sell - date: 2025-03-17 11:00:00, amount remaining: $1035954.04, profit and loss: -0.15%
+remaining amount: $1035954.04
+
+stop loss sell - date: 2025-03-17 16:00:00, amount remaining: $0.00, profit and loss: -0.15%
+stop loss sell: $82583.95
+
+stop loss sell - date: 2025-03-18 00:15:00, amount remaining: $1039149.00, profit and loss: 0.31%
+remaining amount: $1039149.00
+
+stop loss sell - date: 2025-03-18 08:15:00, amount remaining: $0.00, profit and loss: 0.31%
+stop loss sell: $82519.09
+
+stop loss sell - date: 2025-03-18 11:00:00, amount remaining: $1031041.93, profit and loss: -0.78%
+remaining amount: $1031041.93
+
+stop loss sell - date: 2025-03-18 19:30:00, amount remaining: $0.00, profit and loss: -0.78%
+stop loss sell: $81174.84
+
+stop loss sell - date: 2025-03-19 12:30:00, amount remaining: $1050289.77, profit and loss: 1.87%
+remaing amount: $1050289.77
+
+stop loss sell - date: 2025-03-19 14:00:00, amount remaining: $0.00, profit and loss: 1.87%
+stop loss sell: $83328.49
+
+stop loss sell - date: 2025-03-19 17:45:00, amount remaining: $1050806.75, profit and loss: 0.05%
+remaining amount: $1050806.75
+
+stop loss sell - date: 2025-03-19 19:00:00, amount remaining: $0.00, profit and loss: 0.05%
+stop loss sell: $84345.01
+
+stop loss sell - date: 2025-03-20 01:45:00, amount remaining: $1051570.18, profit and loss: 0.07%
+remaing amount: $1051570.18
+
+stop loss sell - date: 2025-03-20 08:30:00, amount remaining: $0.00, profit and loss: 0.07%
+stop loss sell: $85245.83
+
+stop loss sell - date: 2025-03-20 10:15:00, amount remaining: $1043338.30, profit and loss: -0.78%
+remaing amount: $1043338.30
+
+stop loss sell - date: 2025-03-20 14:15:00, amount remaining: $0.00, profit and loss: -0.78%
+stop loss sell: $85540.33
+
+stop loss sell - date: 2025-03-20 15:30:00, amount remaining: $1027011.23, profit and loss: -1.56%
+remaing amount: $1027011.23
+
+stop loss sell - date: 2025-03-21 00:30:00, amount remaining: $0.00, profit and loss: -1.56%
+stop loss sell: $83841.93
+
+stop loss sell - date: 2025-03-21 05:30:00, amount remaining: $1027362.25, profit and loss: 0.03%
+remaining amount: $1027362.25
+
+stop loss sell - date: 2025-03-21 12:15:00, amount remaining: $0.00, profit and loss: 0.03%
+stop loss sell: $83810.41
+
+stop loss sell - date: 2025-03-21 12:30:00, amount remaining: $1020311.28, profit and loss: -0.69%
+remaing amount: $1020311.28
+
+stop loss sell - date: 2025-03-21 14:30:00, amount remaining: $0.00, profit and loss: -0.69%
+stop loss sell: $83295.87
+
+stop loss sell - date: 2025-03-21 16:00:00, amount remaining: $1018369.98, profit and loss: -0.19%
+remaining amount: $1018369.98
+
+stop loss sell - date: 2025-03-21 17:30:00, amount remaining: $0.00, profit and loss: -0.19%
+stop loss sell: $83332.14
+
+stop loss sell - date: 2025-03-21 20:00:00, amount remaining: $1016414.38, profit and loss: -0.19%
+remaining amount: $1016414.38
+
+stop loss sell - date: 2025-03-21 21:00:00, amount remaining: $0.00, profit and loss: -0.19%
+stop loss sell: $83655.31
+
+stop loss sell - date: 2025-03-22 00:00:00, amount remaining: $1013338.69, profit and loss: -0.30%
+remaining amount: $1013338.69
+
+stop loss sell - date: 2025-03-22 03:30:00, amount remaining: $0.00, profit and loss: -0.30%
+stop loss sell: $83836.98
+
+stop loss sell - date: 2025-03-22 08:15:00, amount remaining: $1013176.93, profit and loss: -0.02%
+remaining amount: $1013176.93
+
+stop loss sell - date: 2025-03-22 09:45:00, amount remaining: $0.00, profit and loss: -0.02%
+stop loss sell: $84199.15
+
+stop loss sell - date: 2025-03-22 11:45:00, amount remaining: $1010908.11, profit and loss: -0.22%
+remaining amount: $1010908.11
+
+stop loss sell - date: 2025-03-22 17:30:00, amount remaining: $0.00, profit and loss: -0.22%
+stop loss sell: $83960.17
+
+stop loss sell - date: 2025-03-22 20:45:00, amount remaining: $1008135.81, profit and loss: -0.27%
+remaing amount: $1008135.81
+
+stop loss sell - date: 2025-03-23 01:15:00, amount remaining: $0.00, profit and loss: -0.27%
+stop loss sell: $83755.98
+
+stop loss sell - date: 2025-03-23 05:15:00, amount remaining: $1007667.62, profit and loss: -0.05%
+remaining amount: $1007667.62
+
+stop loss sell - date: 2025-03-23 06:00:00, amount remaining: $0.00, profit and loss: -0.05%
+stop loss sell: $83915.25
+
+stop loss sell - date: 2025-03-23 18:15:00, amount remaining: $1015701.21, profit and loss: 0.80%
+remaining amount: $1015701.21
+
+stop loss sell - date: 2025-03-23 22:15:00, amount remaining: $0.00, profit and loss: 0.80%
+stop loss sell: $84984.95
+
+stop loss sell - date: 2025-03-24 01:15:00, amount remaining: $1018612.15, profit and loss: 0.29%
+remaing amount: $1018612.15
+
+stop loss sell - date: 2025-03-24 03:30:00, amount remaining: $0.00, profit and loss: 0.29%
+stop loss sell: $85757.29
+
+stop loss sell - date: 2025-03-24 20:45:00, amount remaining: $1036798.54, profit and loss: 1.79%
+remaining amount: $1036798.54
+
+stop loss sell - date: 2025-03-25 09:30:00, amount remaining: $0.00, profit and loss: 1.79%
+stop loss sell: $86560.26
+
+stop loss sell - date: 2025-03-25 21:45:00, amount remaining: $1044743.75, profit and loss: 0.77%
+remaining amount: $1044743.75
+
+stop loss sell - date: 2025-03-26 01:15:00, amount remaining: $0.00, profit and loss: 0.77%
+stop loss sell: $87155.40
+
+stop loss sell - date: 2025-03-26 02:45:00, amount remaining: $1039304.92, profit and loss: -0.52%
+remaining amount: $1039304.92
+
+stop loss sell - date: 2025-03-26 05:45:00, amount remaining: $0.00, profit and loss: -0.52%
+stop loss sell: $86976.14
+
+stop loss sell - date: 2025-03-26 12:15:00, amount remaining: $1042065.23, profit and loss: 0.27%
+remaing amount: $1042065.23
+
+stop loss sell - date: 2025-03-26 20:30:00, amount remaining: $0.00, profit and loss: 0.27%
+stop loss sell: $86380.28
+
+stop loss sell - date: 2025-03-26 23:30:00, amount remaining: $1036386.45, profit and loss: -0.54%
+remaining amount: $1036386.45
+
+stop loss sell - date: 2025-03-27 00:00:00, amount remaining: $0.00, profit and loss: -0.54%
+stop loss sell: $86211.87
+
+stop loss sell - date: 2025-03-27 07:30:00, amount remaining: $1040066.47, profit and loss: 0.36%
+remaining amount: $1040066.47
+
+stop loss sell - date: 2025-03-27 09:00:00, amount remaining: $0.00, profit and loss: 0.36%
+stop loss sell: $86917.95
+
+stop loss sell - date: 2025-03-27 11:00:00, amount remaining: $1036110.89, profit and loss: -0.38%
+remaining amount: $1036110.89
+
+stop loss sell - date: 2025-03-27 15:00:00, amount remaining: $0.00, profit and loss: -0.38%
+stop loss sell: $86443.95
+
+stop loss sell - date: 2025-03-27 23:15:00, amount remaining: $1034221.97, profit and loss: -0.18%
+remaining amount: $1034221.97
+
+stop loss sell - date: 2025-03-28 02:15:00, amount remaining: $0.00, profit and loss: -0.18%
+stop loss sell: $86834.24
+
+stop loss sell - date: 2025-03-28 02:45:00, amount remaining: $1031122.13, profit and loss: -0.30%
+remaining amount: $1031122.13
+
+stop loss sell - date: 2025-03-28 22:15:00, amount remaining: $0.00, profit and loss: -0.30%
+stop loss sell: $83590.86
+
+stop loss sell - date: 2025-03-29 02:30:00, amount remaining: $1029176.14, profit and loss: -0.19%
+remaining amount: $1029176.14
+
+stop loss sell - date: 2025-03-29 20:30:00, amount remaining: $0.00, profit and loss: -0.19%
+stop loss sell: $82068.01
+
+stop loss sell - date: 2025-03-30 10:45:00, amount remaining: $1034157.06, profit and loss: 0.48%
+remaing amount: $1034157.06
+
+stop loss sell - date: 2025-03-31 05:15:00, amount remaining: $0.00, profit and loss: 0.48%
+stop loss sell: $81474.22
+
+stop loss sell - date: 2025-03-31 09:15:00, amount remaining: $1024162.44, profit and loss: -0.97%
+remaining amount: $1024162.44
+
+stop loss sell - date: 2025-03-31 11:00:00, amount remaining: $0.00, profit and loss: -0.97%
+stop loss sell: $81364.51
+
+stop loss sell - date: 2025-03-31 17:45:00, amount remaining: $1032407.41, profit and loss: 0.81%
+remaining amount: $1032407.41
+
+stop loss sell - date: 2025-04-01 02:00:00, amount remaining: $0.00, profit and loss: 0.81%
+stop loss sell: $82120.20
+
+stop loss sell - date: 2025-04-01 12:30:00, amount remaining: $1044696.77, profit and loss: 1.19%
+remaing amount: $1044696.77
+
+stop loss sell - date: 2025-04-01 15:15:00, amount remaining: $0.00, profit and loss: 1.19%
+stop loss sell: $83580.78
+
+stop loss sell - date: 2025-04-02 00:45:00, amount remaining: $1047774.34, profit and loss: 0.29%
+remaining amount: $1047774.34
+
+stop loss sell - date: 2025-04-02 08:30:00, amount remaining: $0.00, profit and loss: 0.29%
+stop loss sell: $84072.08
+
+stop loss sell - date: 2025-04-02 11:45:00, amount remaining: $1046361.76, profit and loss: -0.13%
+remaing amount: $1046361.76
+
+stop loss sell - date: 2025-04-02 13:45:00, amount remaining: $0.00, profit and loss: -0.13%
+stop loss sell: $84362.05
+
+stop loss sell - date: 2025-04-02 20:15:00, amount remaining: $1056107.08, profit and loss: 0.93%
+remaing amount: $1056107.08
+
+stop loss sell - date: 2025-04-03 08:30:00, amount remaining: $0.00, profit and loss: 0.93%
+stop loss sell: $83017.37
+
+stop loss sell - date: 2025-04-03 10:30:00, amount remaining: $1049575.52, profit and loss: -0.62%
+remaing amount: $1049575.52
+
+stop loss sell - date: 2025-04-03 21:00:00, amount remaining: $0.00, profit and loss: -0.62%
+stop loss sell: $81672.02
+
+stop loss sell - date: 2025-04-04 04:15:00, amount remaining: $1050999.62, profit and loss: 0.14%
+remaining amount: $1050999.62
+
+stop loss sell - date: 2025-04-04 05:45:00, amount remaining: $0.00, profit and loss: 0.14%
+stop loss sell: $82587.68
+
+stop loss sell - date: 2025-04-04 10:00:00, amount remaining: $1057597.39, profit and loss: 0.63%
+remaing amount: $1057597.39
+
+stop loss sell - date: 2025-04-04 15:15:00, amount remaining: $0.00, profit and loss: 0.63%
+stop loss sell: $81440.70
+
+stop loss sell - date: 2025-04-04 23:15:00, amount remaining: $1065977.41, profit and loss: 0.79%
+remaining amount: $1065977.41
+
+stop loss sell - date: 2025-04-05 01:45:00, amount remaining: $0.00, profit and loss: 0.79%
+stop loss sell: $83210.69
+
+stop loss sell - date: 2025-04-05 03:15:00, amount remaining: $1063101.71, profit and loss: -0.27%
+remaining amount: $1063101.71
+
+stop loss sell - date: 2025-04-05 09:15:00, amount remaining: $0.00, profit and loss: -0.27%
+stop loss sell: $83204.57
+
+stop loss sell - date: 2025-04-05 12:00:00, amount remaining: $1060302.30, profit and loss: -0.26%
+remaing amount: $1060302.30
+
+stop loss sell - date: 2025-04-05 18:15:00, amount remaining: $0.00, profit and loss: -0.26%
+stop loss sell: $82536.27
+
+stop loss sell - date: 2025-04-06 06:45:00, amount remaining: $1062049.38, profit and loss: 0.16%
+remaining amount: $1062049.38
+
+stop loss sell - date: 2025-04-07 10:15:00, amount remaining: $0.00, profit and loss: 0.16%
+stop loss sell: $75447.44
+
+stop loss sell - date: 2025-04-08 05:30:00, amount remaining: $1097704.94, profit and loss: 3.36%
+remaining amount: $1097704.94
+
+stop loss sell - date: 2025-04-08 11:30:00, amount remaining: $0.00, profit and loss: 3.36%
+stop loss sell: $79009.67
+
+stop loss sell - date: 2025-04-08 14:30:00, amount remaining: $1090724.12, profit and loss: -0.64%
+remaing amount: $1090724.12
+
+stop loss sell - date: 2025-04-09 04:45:00, amount remaining: $0.00, profit and loss: -0.64%
+stop loss sell: $74861.94
+
+stop loss sell - date: 2025-04-09 11:00:00, amount remaining: $1092257.40, profit and loss: 0.14%
+remaing amount: $1092257.40
+
+stop loss sell - date: 2025-04-09 13:45:00, amount remaining: $0.00, profit and loss: 0.14%
+stop loss sell: $76323.14
+
+stop loss sell - date: 2025-04-10 03:15:00, amount remaining: $1145569.43, profit and loss: 4.88%
+remaing amount: $1145569.43
+
+stop loss sell - date: 2025-04-10 06:00:00, amount remaining: $0.00, profit and loss: 4.88%
+stop loss sell: $81564.92
+
+stop loss sell - date: 2025-04-10 07:30:00, amount remaining: $1135605.52, profit and loss: -0.87%
+remaing amount: $1135605.52
+
+stop loss sell - date: 2025-04-10 10:00:00, amount remaining: $0.00, profit and loss: -0.87%
+stop loss sell: $81283.15
+
+stop loss sell - date: 2025-04-10 11:15:00, amount remaining: $1132356.21, profit and loss: -0.29%
+remaining amount: $1132356.21
+
+stop loss sell - date: 2025-04-10 12:30:00, amount remaining: $0.00, profit and loss: -0.29%
+stop loss sell: $81282.48
+
+stop loss sell - date: 2025-04-10 13:30:00, amount remaining: $1116363.47, profit and loss: -1.41%
+remaing amount: $1116363.47
+
+
+===== Strategy Performance =====
+Initial Capital: $1000000.00
+Final Capital:   $1116363.47
+Total Return:    11.64%
+Trades Executed: 412
+Win Rate:        39.32%
+Avg. Profit:     1.01%
+Avg. Loss:       -0.55%
+Profit Factor:   1.19

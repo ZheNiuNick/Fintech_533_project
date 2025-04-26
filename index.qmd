@@ -33,6 +33,14 @@ img, table, .plotly-graph-div {
 
 **Authors**: Zhe Niu (M.S. FinTech), Haocheng Ni (M.S. ECE), Chenyuan Lei (M.S. ECE) – Duke University
 
+```{=html}
+<p style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+  ▶️ <a href="https://www.youtube.com/watch?v=HjpjDU6YuAw" target="_blank" style="font-size: 20px;">
+  Watch our project presentation on YouTube
+  </a>
+</p>
+```
+
 # Trading Strategy & Plan
 
 This project presents a candlestick pattern-enhanced MACD and ATR strategy that detects market microstructure patterns and swing trends in the cryptocurrency market. We combine rule-based indicators (MACD, ATR, EMA) with a CNN classifier trained to recognize candlestick pattern windows. The goal is to improve entry/exit accuracy in BTC/USDT trading through deep learning-enhanced pattern recognition.
@@ -103,6 +111,8 @@ The model learns visual features through stacked layers and achieves a test accu
 
 # Trade Records (Blotter)
 
+_The following charts are interactive, enabling users to hover for details and zoom in on specific time periods._
+
 ```{python}
 import pandas as pd
 import plotly.express as px
@@ -152,6 +162,8 @@ fig.show()
 ---
 
 # Account Overview (Ledger)
+
+_The following charts are interactive, enabling users to hover for details and zoom in on specific time periods._
 
 ```{python}
 ledger = pd.read_csv('source/ledger.csv')
@@ -252,6 +264,8 @@ display(HTML("<h4>Performance Metrics</h4>" + metrics.to_html(index=False, class
 ---
 
 # Additional Performance Charts
+
+_The following charts are interactive, enabling users to hover for details and zoom in on specific time periods._
 
 ```{python}
 # Trade Type Distribution
